@@ -10,10 +10,10 @@ import { useControls } from 'leva'
 
 extend({ MeshLineGeometry, MeshLineMaterial })
 // useGLTF.preload('/3d-Card.glb')
-useTexture.preload('/band.png')
+// useTexture.preload('/public/band.png')
 
 export default function Card({fileName}) {
-  useGLTF.preload(`/${fileName}.glb`)
+  // useGLTF.preload(`/public/${fileName}.glb`)
   // const { debug } = useControls({ debug: false })
   return (
     <Canvas
