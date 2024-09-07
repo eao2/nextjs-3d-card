@@ -11,7 +11,7 @@ export default function Home() {
           <section className="members" key={member.username}>
             <Link
               className="link"
-              href={`/${member.username}`}
+              href={`/member/${member.username}`}
             >
               {member.username}
             </Link>
