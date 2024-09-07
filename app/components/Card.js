@@ -9,7 +9,7 @@ import { MeshLineGeometry, MeshLineMaterial } from 'meshline'
 import { useControls } from 'leva'
 
 extend({ MeshLineGeometry, MeshLineMaterial })
-useTexture.preload(`${process.env.NEXT_PUBLIC_URL}band.png`)
+useTexture.preload(`${process.env.NEXT_PUBLIC_URL}Band.png`)
 
 export default function Card({fileName}) {
   useGLTF.preload(`${process.env.NEXT_PUBLIC_URL}${fileName}.glb`)
@@ -49,7 +49,7 @@ function Band({ maxSpeed = 50, minSpeed = 10, fileName }) {
   const vec = new THREE.Vector3(), ang = new THREE.Vector3(), rot = new THREE.Vector3(), dir = new THREE.Vector3() // prettier-ignore
   const segmentProps = { type: 'dynamic', canSleep: true, colliders: false, angularDamping: 2, linearDamping: 2 }
   const { nodes, materials } = useGLTF(`${process.env.NEXT_PUBLIC_URL}${fileName}.glb`)
-  const texture = useTexture(`${process.env.NEXT_PUBLIC_URL}band.png`)
+  const texture = useTexture(`${process.env.NEXT_PUBLIC_URL}Band.png`)
   const { width, height } = useThree((state) => state.size)
   const [curve] = useState(() => new THREE.CatmullRomCurve3([new THREE.Vector3(), new THREE.Vector3(), new THREE.Vector3(), new THREE.Vector3()]))
   const [dragged, drag] = useState(false)
