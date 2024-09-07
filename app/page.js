@@ -3,6 +3,7 @@ import data from '/public/members.json';
 import Link from "next/link"
 
 export default function Home() {
+  console.log(process.env.PUBLIC_URL)
   return (
     <>
       {
