@@ -1,0 +1,71 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body{
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: url('/BG4k.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  object-fit: contain;
+  overflow: hidden;
+}
+
+.Card{
+  position: absolute;
+  transform: translateX(20vw);
+}
+/* 
+#leva__root{
+  display: none;
+} */
+
+.text{
+  /* z-index: 1;
+  position: fixed; */
+}
+
+@media (max-width: 1024px) {
+  .Card{
+    transform: translateX(0);
+  }
+}
+
+.members{
+  color: #eee;
+  font-style: normal;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  padding-top: 1rem;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+
+.link{
+  font-family: var(--font-geist-mono);
+  font-style: normal;
+  box-sizing: border-box;
+  text-decoration: none;
+  width: 20rem;
+  margin: .5rem;
+  padding: 1rem;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 1rem;
+  color: #eee;
+  text-align: center;
+}

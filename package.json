@@ -1,0 +1,24 @@
+{
+  "name": "nextjs-3d-card",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "@react-three/drei": "^9.112.0",
+    "@react-three/fiber": "^8.17.6",
+    "@react-three/rapier": "^1.4.0",
+    "@types/three": "^0.168.0",
+    "leva": "^0.9.35",
+    "meshline": "^3.3.1",
+    "next": "14.2.8",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "react-scripts": "^5.0.1",
+    "three": "^0.168.0"
+  }
+}
